@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -16,17 +18,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_center,rgba(255,255,255,0.16),transparent_34%),radial-gradient(circle_at_right_center,rgba(255,211,102,0.1),transparent_26%)]" />
         </div>
 
-        <header className="relative z-20 flex items-center justify-center px-4 pt-3 text-[0.74rem] font-semibold uppercase tracking-[0.18em] text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)] sm:px-8">
-          <nav aria-label="Primary" className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 sm:gap-x-6">
-            <a href="#home" className="transition-opacity hover:opacity-75">Home</a>
-            <a href="#about" className="transition-opacity hover:opacity-75">About</a>
-            <a href="#staff" className="transition-opacity hover:opacity-75">Meet the Staff</a>
-            <a href="#programs" className="transition-opacity hover:opacity-75">Our Programs</a>
-            <a href="#enrolment" className="transition-opacity hover:opacity-75">Course Enrolment</a>
-            <a href="#contact" className="transition-opacity hover:opacity-75">Contact Us</a>
-            <a href="#summer-camp" className="transition-opacity hover:opacity-75">Summer Camp</a>
-          </nav>
-        </header>
+        <Header />
 
         <section
           id="home"
@@ -55,11 +47,17 @@ export default function Home() {
             </h1>
 
             <div className="mt-10 flex flex-col items-center gap-1 text-white/96 drop-shadow-[0_1px_4px_rgba(0,0,0,0.45)] sm:mt-12">
-              <span className="font-serif text-[1.1rem] font-semibold sm:text-[1.15rem]">Explore</span>
-              <span className="text-3xl leading-none animate-float-slow">↓</span>
+              <span className="font-serif text-[1.1rem] font-semibold sm:text-[1.15rem]">
+                Explore
+              </span>
+              <span className="text-3xl leading-none animate-float-slow">
+                ↓
+              </span>
             </div>
           </div>
         </section>
+
+        <Footer />
       </div>
     </main>
   );
