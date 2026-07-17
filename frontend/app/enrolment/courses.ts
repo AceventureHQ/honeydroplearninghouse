@@ -124,7 +124,7 @@ export const courses: Course[] = [
       "A week-long global explorers camp for kids aged 6-12 to explore different cultures and geographical locations.",
     description:
       "This camp is designed for young learners to dive into the world of various artistic disciplines. Participants will engage in hands-on activities, learn basic techniques, and work in teams to create their own artistic projects.",
-    image: "/images/summer-camp/Global_explorers_Camp.png",
+    image: "/images/summer-camp/Global_Explorers_Camp.png",
     imageAlt: "Children learning about different cultures and geographical locations in a summer camp setting",
     highlights: ["Small groups", "Practical skills", "Flexible pacing"],
     idealFor: "Children aged 6-12 interested in exploring different cultures and geographical locations.",
@@ -144,7 +144,7 @@ export const courses: Course[] = [
       "A week-long multi-arts camp for kids aged 5-14 to explore various artistic disciplines.",
     description:
       "This camp is designed for young learners to dive into the world of various artistic disciplines. Participants will engage in hands-on activities, learn basic techniques, and work in teams to create their own artistic projects.",
-    image: "/images/summer-camp/Multi-Arts_Camp.png",
+    image: "/images/summer-camp/Multi-arts_Camp.png",
     imageAlt: "Children creating artistic projects in a summer camp setting",
     highlights: ["Small groups", "Practical skills", "Flexible pacing"],
     idealFor: "Children aged 5-14 interested in exploring various artistic disciplines.",
