@@ -7,7 +7,7 @@ export default function Staff() {
       role: "Curriculum Development Lead",
       education: "B.Soc.Sc.; B.Ed.; OCT",
       type: "Creative, Kind",
-      image: "/images/miss_b.jpg",
+      image: "/images/staff/miss_b(2).jpg",
       objectPosition: "object-center top-[10%]",
     },
     {
@@ -15,7 +15,7 @@ export default function Staff() {
       role: "Homeschool Support Lead",
       education: "B.A.; SSW Dip.",
       type: "Patient, Supportive",
-      image: "/images/jill.jpg",
+      image: "/images/staff/jill.jpg",
       objectPosition: "object-center top-[10%]",
     },
     {
@@ -23,7 +23,7 @@ export default function Staff() {
       role: "Music Lead",
       education: "B.A. (Sacred Music, in progress)",
       type: "Energetic, Inspiring",
-      image: "/images/John.jpg",
+      image: "/images/staff/john.jpg",
       objectPosition: "object-center",
     },
     {
@@ -31,7 +31,7 @@ export default function Staff() {
       role: "Center Lead",
       education: "B.Ed. in Music; MTS; Ph.D.; OCT",
       type: "Warm, Vision-Driven",
-      image: "/images/Kimberly.png",
+      image: "/images/staff/kimberly.png",
       objectPosition: "object-center top-[8%]",
     },
     {
@@ -39,7 +39,7 @@ export default function Staff() {
       role: "Consulting Educator",
       education: "B.A.; B.Ed.; OCT; Special Ed. Specialist",
       type: "Experienced, Compassionate",
-      image: "/images/jim.jpg",
+      image: "/images/staff/jim.jpg",
       objectPosition: "object-center top-[8%]",
     },
   ];
