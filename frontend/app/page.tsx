@@ -7,7 +7,7 @@ export default function Home() {
       <section className="relative min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/images/front-reception.jpg"
+            src="/images/building/front-reception.jpg"
             alt="Front reception"
             fill
             loading="eager"
