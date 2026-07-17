@@ -2,14 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
-
   const socialLinks = [
     {
       label: "Facebook",
       href: "https://www.facebook.com/honeydrop.learning.house/",
       path: "M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z",
     },
-    
     {
       label: "Instagram",
       href: "https://www.instagram.com/honeydroplearninghouse",
@@ -18,9 +16,9 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative z-20 border-t border-[#d9a91c] bg-[#F4BE36] px-4 py-5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-slate-950 sm:px-8">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
-        <div className="flex justify-center  gap-3">
+    <footer className="relative z-20 border-t border-[#d9a91c] bg-[#F4BE36] px-4 py-6 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-slate-950 sm:px-8 sm:py-7">
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-5 text-center md:flex-row md:items-start md:justify-between md:text-left">
+        <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-start md:items-start">
           <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/70 bg-white/96 shadow-[0_14px_38px_rgba(0,0,0,0.18)] sm:h-12 sm:w-12">
             <Image
               src="/images/simple-logo.png"
@@ -31,11 +29,9 @@ export default function Footer() {
             />
           </div>
           <div className="flex flex-col gap-1 text-[0.68rem] tracking-[0.14em] text-slate-900">
-            <div className="flex flex-col gap-1 text-[0.68rem] tracking-[0.14em] text-slate-900">
-              <span className="text-slate-950">Honeydrop Learning House</span>
-              <span>Learning with care, structure, and joy</span>
-            </div>
-            <div className="mt-2 flex gap-2">
+            <span className="text-slate-950">Honeydrop Learning House</span>
+            <span>Learning with care, structure, and joy</span>
+            <div className="mt-2 flex justify-center gap-2 sm:justify-start">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -60,39 +56,24 @@ export default function Footer() {
 
         <nav
           aria-label="Footer"
-          className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-center md:justify-start"
+          className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-center md:justify-start md:text-left"
         >
           <Link href="/" className="transition-colors hover:text-slate-800">
             Home
           </Link>
-          <Link
-            href="/about"
-            className="transition-colors hover:text-slate-800"
-          >
+          <Link href="/about" className="transition-colors hover:text-slate-800">
             About
           </Link>
-          <Link
-            href="/programs"
-            className="transition-colors hover:text-slate-800"
-          >
+          <Link href="/programs" className="transition-colors hover:text-slate-800">
             Programs
           </Link>
-          <Link
-            href="/staff"
-            className="transition-colors hover:text-slate-800"
-          >
+          <Link href="/staff" className="transition-colors hover:text-slate-800">
             Staff
           </Link>
-          <Link
-            href="/enrolment"
-            className="transition-colors hover:text-slate-800"
-          >
+          <Link href="/enrolment" className="transition-colors hover:text-slate-800">
             Enrolment
           </Link>
-          <Link
-            href="/contact"
-            className="transition-colors hover:text-slate-800"
-          >
+          <Link href="/contact" className="transition-colors hover:text-slate-800">
             Contact
           </Link>
         </nav>
