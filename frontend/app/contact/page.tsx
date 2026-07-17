@@ -106,9 +106,7 @@ export default function Contact() {
                   Payment help
                 </p>
                 <p className="mt-3 text-sm leading-7 text-slate-700">
-                  For payment questions, use the Enrolment page to save learner
-                  details, then e-transfer to office@honeydrophouse.ca or pay in
-                  person at the office.
+                  For payment questions, use the enrolment page to choose a course and sign up or pay in person at the office.
                 </p>
               </div>
             </div>
