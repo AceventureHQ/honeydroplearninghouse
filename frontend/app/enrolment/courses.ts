@@ -3,6 +3,7 @@ export type Course = {
   name: string;
   category: "summer-camps" | "tutoring";
   cost: string;
+  priceCents: number;
   cadence: string;
   summary: string;
   description: string;
@@ -79,6 +80,7 @@ export const courses: Course[] = [
     name: "Robotics Camp",
     category: "summer-camps",
     cost: "$380",
+    priceCents: 38000,
     cadence: "August 10-14",
     summary:
       "A week-long robotics camp for kids aged 7-14 to explore coding, engineering, and teamwork.",
@@ -99,6 +101,7 @@ export const courses: Course[] = [
     name: "Coding Camp",
     category: "summer-camps",
     cost: "$380",
+    priceCents: 38000,
     cadence: "August 3-7",
     summary:
       "A week-long coding camp for kids aged 7-14 to explore programming, problem-solving, and creativity.",
@@ -119,6 +122,7 @@ export const courses: Course[] = [
     name: "Global Explorers Camp",
     category: "summer-camps",
     cost: "$340",
+    priceCents: 34000,
     cadence: "",
     summary:
       "A week-long global explorers camp for kids aged 6-12 to explore different cultures and geographical locations.",
@@ -139,6 +143,7 @@ export const courses: Course[] = [
     name: "Multi-Arts Camp",
     category: "summer-camps",
     cost: "$350",
+    priceCents: 35000,
     cadence: "",
     summary:
       "A week-long multi-arts camp for kids aged 5-14 to explore various artistic disciplines.",
@@ -159,6 +164,7 @@ export const courses: Course[] = [
     name: "Entrepreneurship Camp",
     category: "summer-camps",
     cost: "$350",
+    priceCents: 35000,
     cadence: "",
     summary:
       "A week-long entrepreneurship camp for kids aged 7-14 to explore business concepts and innovation.",
@@ -179,6 +185,7 @@ export const courses: Course[] = [
     name: "Mission Space Camp",
     category: "summer-camps",
     cost: "$360",
+    priceCents: 36000,
     cadence: "",
     summary:
       "A week-long space exploration camp for kids aged 5-9 to learn about astronomy and rocket science.",
@@ -199,6 +206,7 @@ export const courses: Course[] = [
     name: "Math Tutor (Elementary)",
     category: "tutoring",
     cost: "$40 / hour",
+    priceCents: 4000,
     cadence: "",
     summary:
       "Choose between one-on-one or small-group math tutoring sessions for kids aged 5-13 to improve their math skills.",
@@ -219,6 +227,7 @@ export const courses: Course[] = [
     name: "Math Tutor (High School)",
     category: "tutoring",
     cost: "$60 / hour",
+    priceCents: 6000,
     cadence: "",
     summary:
       "Choose between one-on-one or small-group math tutoring sessions for kids aged 14-18 to improve their math skills.",

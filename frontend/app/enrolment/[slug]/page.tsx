@@ -126,7 +126,7 @@ export default async function CoursePage({ params }: CoursePageProps) {
               Fill this out so we have the student details, emergency contacts, and any learning accommodations in one place.
             </p>
 
-            <CheckoutForm courseName={course.name} courseSlug={course.slug} />
+            <CheckoutForm courseName={course.name} courseSlug={course.slug} courseCost={course.cost} />
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link
