@@ -54,14 +54,27 @@ export default function About() {
               </div>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-2 lg:gap-3">
               {[
-                ["/images/front-reception.jpg", "Reception and welcome area"],
-                ["/images/ESS00022-HDR.jpg", "Learning and enrichment space"],
-              ].map(([src, caption]) => (
+                {
+                  src: "/images/building/front-reception.jpg",
+                  caption: "Reception and welcome area",
+                  className: "sm:col-span-2 lg:col-span-2",
+                },
+                {
+                  src: "/images/building/common-area.jpg",
+                  caption: "Learning and enrichment space",
+                  className: "",
+                },
+                {
+                  src: "/images/building/hallway.jpg",
+                  caption: "Hallway",
+                  className: "",
+                },
+              ].map(({ src, caption, className }) => (
                 <figure
                   key={caption}
-                  className="overflow-hidden rounded-[1.4rem] border border-slate-200/80 bg-white/90 shadow-[0_18px_48px_rgba(15,23,42,0.08)]"
+                  className={`overflow-hidden rounded-[1.4rem] border border-slate-200/80 bg-white/90 shadow-[0_18px_48px_rgba(15,23,42,0.08)] ${className}`}
                 >
                   <div className="relative aspect-[4/3] sm:aspect-[5/4] lg:aspect-[4/3]">
                     <Image
@@ -119,7 +132,7 @@ export default function About() {
               </div>
 
               <Image
-                src="/images/628198158_1337066571796690_7675994831397749802_n.jpg"
+                src="/images/building/library.jpg"
                 alt="Library and reading area"
                 width={800}
                 height={600}

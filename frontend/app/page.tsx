@@ -10,6 +10,7 @@ export default function Home() {
             src="/images/front-reception.jpg"
             alt="Front reception"
             fill
+            loading="eager"
             priority
             sizes="100vw"
             className="object-cover object-center"
@@ -109,7 +110,7 @@ export default function Home() {
           <div className="order-1 md:order-2">
             <div className="relative overflow-hidden rounded-[1.6rem] border border-amber-200 bg-white shadow-[0_18px_40px_rgba(31,41,55,0.14)]">
               <Image
-                src="/images/summercamp.jpg"
+                src="/images/summer-camp/summercamp.jpg"
                 alt="Honeydrop Learning House summer camp poster"
                 width={900}
                 height={1200}
@@ -151,10 +152,11 @@ export default function Home() {
 
           <div className="relative overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-[0_20px_50px_rgba(15,23,42,0.12)]">
             <Image
-              src="/images/front-entrance.jpg"
+              src="/images/building/front-entrance.jpg"
               alt="Students and families arriving at Honeydrop Learning House"
               width={1400}
               height={1000}
+              loading="lazy"
               className="h-full min-h-[320px] w-full object-cover"
             />
           </div>
@@ -204,7 +206,7 @@ export default function Home() {
               </p>
               <Link
                 href="/enrolment"
-                className="mt-7 inline-flex rounded-full bg-emerald-700 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-600"
+                className="mt-7 inline-flex rounded-full bg-[#F4BE36] px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-[#F4BE36]/90"
               >
                 View Admissions
               </Link>

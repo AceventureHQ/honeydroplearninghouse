@@ -1,6 +1,7 @@
 export type Course = {
   slug: string;
   name: string;
+  category: "summer-camps" | "tutoring";
   cost: string;
   cadence: string;
   summary: string;
@@ -75,15 +76,16 @@ export const courses: Course[] = [
   // },
   {
     slug: "robotics",
-    name: "Robotics",
+    name: "Robotics Camp",
+    category: "summer-camps",
     cost: "$380",
     cadence: "August 10-14",
     summary:
       "A week-long robotics camp for kids aged 7-14 to explore coding, engineering, and teamwork.",
     description:
       "This camp is designed for young learners to dive into the world of robotics. Participants will engage in hands-on activities, learn basic programming, and work in teams to build and program their own robots.",
-    image: "/images/blue-room.jpg",
-    imageAlt: "Adult learning and community classroom setting",
+    image: "/images/summer-camp/Robotics_Lab_Camp.png",
+    imageAlt: "Children building robots in a summer camp setting",
     highlights: ["Small groups", "Practical skills", "Flexible pacing"],
     idealFor: "Children aged 7-14 interested in exploring robotics.",
     included: [
@@ -94,15 +96,16 @@ export const courses: Course[] = [
   },
   {
     slug: "coding",
-    name: "Coding",
+    name: "Coding Camp",
+    category: "summer-camps",
     cost: "$380",
     cadence: "August 3-7",
     summary:
       "A week-long coding camp for kids aged 7-14 to explore programming, problem-solving, and creativity.",
     description:
       "This camp is designed for young learners to dive into the world of coding. Participants will engage in hands-on activities, learn basic programming, and work in teams to build and program their own projects.",
-    image: "/images/DSC00595-1-2.jpg",
-    imageAlt: "Adult learning and community classroom setting",
+    image: "/images/summer-camp/Junior_Coding_Camp.png",
+    imageAlt: "Children learning to code in a summer camp setting",
     highlights: ["Small groups", "Practical skills", "Flexible pacing"],
     idealFor: "Children aged 7-14 interested in exploring coding.",
     included: [
@@ -112,16 +115,57 @@ export const courses: Course[] = [
     ],
   },
   {
-    slug: "multi-arts",
-    name: "Multi-Arts Camp",
-    cost: "$330",
+    slug: "global-explorers",
+    name: "Global Explorers Camp",
+    category: "summer-camps",
+    cost: "$340",
     cadence: "",
     summary:
-      "A week-long multi-arts camp for kids aged 7-14 to explore various artistic disciplines.",
+      "A week-long global explorers camp for kids aged 6-12 to explore different cultures and geographical locations.",
     description:
       "This camp is designed for young learners to dive into the world of various artistic disciplines. Participants will engage in hands-on activities, learn basic techniques, and work in teams to create their own artistic projects.",
-    image: "/images/DSC_2413-1.jpg",
-    imageAlt: "Adult learning and community classroom setting",
+    image: "/images/summer-camp/Global_explorers_Camp.png",
+    imageAlt: "Children learning about different cultures and geographical locations in a summer camp setting",
+    highlights: ["Small groups", "Practical skills", "Flexible pacing"],
+    idealFor: "Children aged 6-12 interested in exploring different cultures and geographical locations.",
+    included: [
+      "Initial goals conversation",
+      "Small-group instruction",
+      "Practice materials",
+    ],
+  },
+  {
+    slug: "multi-arts",
+    name: "Multi-Arts Camp",
+    category: "summer-camps",
+    cost: "$350",
+    cadence: "",
+    summary:
+      "A week-long multi-arts camp for kids aged 5-14 to explore various artistic disciplines.",
+    description:
+      "This camp is designed for young learners to dive into the world of various artistic disciplines. Participants will engage in hands-on activities, learn basic techniques, and work in teams to create their own artistic projects.",
+    image: "/images/summer-camp/Multi-Arts_Camp.png",
+    imageAlt: "Children creating artistic projects in a summer camp setting",
+    highlights: ["Small groups", "Practical skills", "Flexible pacing"],
+    idealFor: "Children aged 5-14 interested in exploring various artistic disciplines.",
+    included: [
+      "Initial goals conversation",
+      "Small-group instruction",
+      "Practice materials",
+    ],
+  },
+  {
+    slug: "entrepreneurship",
+    name: "Entrepreneurship Camp",
+    category: "summer-camps",
+    cost: "$350",
+    cadence: "",
+    summary:
+      "A week-long entrepreneurship camp for kids aged 7-14 to explore business concepts and innovation.",
+    description:
+      "This camp is designed for young learners to dive into the world of various artistic disciplines. Participants will engage in hands-on activities, learn basic techniques, and work in teams to create their own artistic projects.",
+    image: "/images/summer-camp/Entrepreneurship_Camp.png",
+    imageAlt: "Children learning about business concepts and innovation in a summer camp setting",
     highlights: ["Small groups", "Practical skills", "Flexible pacing"],
     idealFor: "Children aged 7-14 interested in exploring various artistic disciplines.",
     included: [
@@ -129,7 +173,67 @@ export const courses: Course[] = [
       "Small-group instruction",
       "Practice materials",
     ],
-  }
+  },
+  {
+    slug: "mission-space",
+    name: "Mission Space Camp",
+    category: "summer-camps",
+    cost: "$360",
+    cadence: "",
+    summary:
+      "A week-long space exploration camp for kids aged 5-9 to learn about astronomy and rocket science.",
+    description:
+      "This camp is designed for young learners to dive into the world of various artistic disciplines. Participants will engage in hands-on activities, learn basic techniques, and work in teams to create their own artistic projects.",
+    image: "/images/summer-camp/Mission_Space_STEM_Camp.png",
+    imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
+    highlights: ["Small groups", "Practical skills", "Flexible pacing"],
+    idealFor: "Children aged 5-9 interested in exploring space and STEM concepts.",
+    included: [
+      "Initial goals conversation",
+      "Small-group instruction",
+      "Practice materials",
+    ],
+  },
+  {
+    slug: "math-elementary",
+    name: "Math Tutor (Elementary)",
+    category: "tutoring",
+    cost: "$40 / hour",
+    cadence: "",
+    summary:
+      "Choose between one-on-one or small-group math tutoring sessions for kids aged 5-13 to improve their math skills.",
+    description:
+      "This tutoring service is designed for young learners to receive personalized math instruction. Participants will engage in one-on-one or small-group sessions, focusing on their specific math needs and goals.",
+    image: "/images/building/duck2.jpg",
+    imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
+    highlights: ["Small groups", "Practical skills", "Flexible pacing"],
+    idealFor: "Children aged 5-13 interested in improving their math skills.",
+    included: [
+      "Initial goals conversation",
+      "Small-group instruction",
+      "Practice materials",
+    ],
+  },
+  {
+    slug: "math-high-school",
+    name: "Math Tutor (High School)",
+    category: "tutoring",
+    cost: "$60 / hour",
+    cadence: "",
+    summary:
+      "Choose between one-on-one or small-group math tutoring sessions for kids aged 14-18 to improve their math skills.",
+    description:
+      "This tutoring service is designed for young learners to receive personalized math instruction. Participants will engage in one-on-one or small-group sessions, focusing on their specific math needs and goals.",
+    image: "/images/building/duck1.jpg",
+    imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
+    highlights: ["Small groups", "Practical skills", "Flexible pacing"],
+    idealFor: "Children aged 14-18 interested in improving their math skills.",
+    included: [
+      "Initial goals conversation",
+      "Small-group instruction",
+      "Practice materials",
+    ],
+  },
 ];
 
 export function getCourseBySlug(slug: string) {

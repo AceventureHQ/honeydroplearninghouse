@@ -6,6 +6,11 @@ import { notFound } from "next/navigation";
 import CheckoutForm from "./CheckoutForm";
 import { getCourseBySlug, courses } from "../courses";
 
+const categoryLabels = {
+  "summer-camps": "Summer Camps",
+  tutoring: "Tutoring",
+} as const;
+
 type CoursePageProps = {
   params: Promise<{ slug: string }>;
 };
@@ -53,6 +58,9 @@ export default async function CoursePage({ params }: CoursePageProps) {
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,23,42,0.06)_0%,rgba(15,23,42,0.22)_100%)]" />
               <div className="absolute left-5 top-5 rounded-full bg-white/92 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-slate-800 shadow-sm">
                 {course.cost}
+              </div>
+              <div className="absolute right-5 top-5 rounded-full bg-slate-900/88 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white shadow-sm">
+                {categoryLabels[course.category]}
               </div>
             </div>
 
