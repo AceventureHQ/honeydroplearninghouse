@@ -222,8 +222,8 @@ export default function CheckoutForm({ courseName, courseSlug }: CheckoutFormPro
         {/* <a href={`mailto:${officeEmail}`} className="font-semibold text-slate-900 underline underline-offset-2">
           {officeEmail}
         </a> */}
-        <a href={`mailto:office@honeydrophouse.ca`} className="font-semibold text-slate-900 underline underline-offset-2">
-          office@honeydrophouse.ca
+        <a href={`mailto:honeydrop.house@gmail.com`} className="font-semibold text-slate-900 underline underline-offset-2">
+          honeydrop.house@gmail.com
         </a>
         {" with a note of the course and student name, "}
         or pay in person at the office.

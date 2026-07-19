@@ -86,7 +86,7 @@ export async function POST(request: Request) {
   const officeEmail =
     process.env.OFFICE_EMAIL ??
     process.env.NEXT_PUBLIC_OFFICE_EMAIL ??
-    "office@honeydrophouse.ca";
+    "honeydrop.house@gmail.com";
   const resendApiKey =
     process.env.RESEND_API_KEY ?? process.env.NEXT_PUBLIC_RESEND_API_KEY;
 
