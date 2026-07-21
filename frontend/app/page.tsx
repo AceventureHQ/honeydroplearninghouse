@@ -24,21 +24,6 @@ export default function Home() {
           className="relative z-10 flex min-h-screen items-center justify-center px-5 py-16 sm:px-8 lg:px-12"
         >
           <div className="relative flex w-full max-w-6xl flex-col items-center">
-            <div className="mb-6 flex flex-col items-center gap-2 text-center text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.42)]">
-              <div className="flex h-20 w-20 items-center justify-center rounded-full border border-white/70 bg-white/96 shadow-[0_14px_38px_rgba(0,0,0,0.18)] sm:h-24 sm:w-24">
-                <Image
-                  src="/images/simple-logo.png"
-                  alt="Honeydrop Learning House logo"
-                  width={72}
-                  height={72}
-                  className="h-14 w-14 object-contain sm:h-16 sm:w-16"
-                />
-              </div>
-              <p className="max-w-[10rem] text-[1.05rem] font-semibold leading-[1.02] tracking-[-0.03em] sm:text-[1.2rem]">
-                Honeydrop Learning House
-              </p>
-            </div>
-
             <h1 className="max-w-4xl text-center font-serif text-[clamp(3.3rem,6.5vw,6.4rem)] italic leading-[0.93] tracking-[-0.055em] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
               A warm place to learn, grow,
               <br />

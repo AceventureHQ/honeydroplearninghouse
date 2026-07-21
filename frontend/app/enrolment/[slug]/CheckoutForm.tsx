@@ -62,7 +62,7 @@ function resolveSquareValue(
   environment: SquareEnvironment,
   sandboxValue: string | undefined,
   productionValue: string | undefined,
-  fallbackValue: string | undefined
+  fallbackValue: string | undefined,
 ) {
   if (environment === "production") {
     return productionValue ?? fallbackValue ?? "";
@@ -84,7 +84,9 @@ function loadSquareScript(scriptUrl: string) {
       return;
     }
 
-    const existingScript = document.querySelector<HTMLScriptElement>(`script[src="${scriptUrl}"]`);
+    const existingScript = document.querySelector<HTMLScriptElement>(
+      `script[src="${scriptUrl}"]`,
+    );
 
     if (existingScript) {
       if (window.Square) {
@@ -93,9 +95,13 @@ function loadSquareScript(scriptUrl: string) {
       }
 
       existingScript.addEventListener("load", () => resolve(), { once: true });
-      existingScript.addEventListener("error", () => reject(new Error("Unable to load Square.")), {
-        once: true,
-      });
+      existingScript.addEventListener(
+        "error",
+        () => reject(new Error("Unable to load Square.")),
+        {
+          once: true,
+        },
+      );
       return;
     }
 
@@ -108,13 +114,18 @@ function loadSquareScript(scriptUrl: string) {
   });
 }
 
-function getSquareErrorMessage(errors?: Array<{ message?: string; detail?: string }>) {
+function getSquareErrorMessage(
+  errors?: Array<{ message?: string; detail?: string }>,
+) {
   if (!errors || errors.length === 0) {
     return "Square could not tokenize the card. Check the card details and try again.";
   }
 
   return errors
-    .map((error) => error.detail ?? error.message ?? "Square could not tokenize the card.")
+    .map(
+      (error) =>
+        error.detail ?? error.message ?? "Square could not tokenize the card.",
+    )
     .join(" ");
 }
 
@@ -134,37 +145,72 @@ const fields: Array<{
   name: keyof CheckoutFormData;
   placeholder: string;
 }> = [
-  { label: "Student name", type: "text", name: "studentName", placeholder: "Student full name" },
-  { label: "Student info", type: "text", name: "studentInfo", placeholder: "Grade, age, or learning context" },
-  { label: "Date of birth", type: "date", name: "dateOfBirth", placeholder: "" },
-  { label: "Email", type: "email", name: "email", placeholder: "Parent or learner email" },
-  { label: "Emergency contact", type: "text", name: "emergencyContact", placeholder: "Name and relationship" },
-  { label: "Emergency phone", type: "tel", name: "emergencyPhone", placeholder: "Phone number" },
+  {
+    label: "Student name",
+    type: "text",
+    name: "studentName",
+    placeholder: "Student full name",
+  },
+  {
+    label: "Student info",
+    type: "text",
+    name: "studentInfo",
+    placeholder: "Grade, age, or learning context",
+  },
+  {
+    label: "Date of birth",
+    type: "date",
+    name: "dateOfBirth",
+    placeholder: "",
+  },
+  {
+    label: "Email",
+    type: "email",
+    name: "email",
+    placeholder: "Parent or learner email",
+  },
+  {
+    label: "Emergency contact",
+    type: "text",
+    name: "emergencyContact",
+    placeholder: "Name and relationship",
+  },
+  {
+    label: "Emergency phone",
+    type: "tel",
+    name: "emergencyPhone",
+    placeholder: "Phone number",
+  },
 ];
 
-export default function CheckoutForm({ courseName, courseSlug, courseCost }: CheckoutFormProps) {
+export default function CheckoutForm({
+  courseName,
+  courseSlug,
+  courseCost,
+}: CheckoutFormProps) {
   const storageKey = `honeydrop-enrolment-${courseSlug}`;
   const squareEnvironment = getSquareEnvironment();
   const squareAppId = resolveSquareValue(
     squareEnvironment,
     process.env.NEXT_PUBLIC_SQUARE_SANDBOX_APP_ID,
     process.env.NEXT_PUBLIC_SQUARE_PRODUCTION_APP_ID,
-    process.env.NEXT_PUBLIC_SQUARE_APP_ID
+    process.env.NEXT_PUBLIC_SQUARE_APP_ID,
   );
   const squareLocationId = resolveSquareValue(
     squareEnvironment,
     process.env.NEXT_PUBLIC_SQUARE_SANDBOX_LOCATION_ID,
     process.env.NEXT_PUBLIC_SQUARE_PRODUCTION_LOCATION_ID,
-    process.env.NEXT_PUBLIC_SQUARE_LOCATION_ID
+    process.env.NEXT_PUBLIC_SQUARE_LOCATION_ID,
   );
   const squareScriptUrl = getSquareScriptUrl(squareEnvironment);
 
   const [formData, setFormData] = useState<CheckoutFormData>(initialFormData);
-  const [savedAt, setSavedAt] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState<string | null>(null);
   const [submitError, setSubmitError] = useState<string | null>(null);
-  const [paymentReceiptUrl, setPaymentReceiptUrl] = useState<string | null>(null);
+  const [paymentReceiptUrl, setPaymentReceiptUrl] = useState<string | null>(
+    null,
+  );
   const [squareReady, setSquareReady] = useState(false);
   const [squareStatus, setSquareStatus] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<CheckoutFormErrors>({});
@@ -211,7 +257,7 @@ export default function CheckoutForm({ courseName, courseSlug, courseCost }: Che
         setSquareStatus(null);
         setSquareReady(false);
         setSubmitError(
-          "Set NEXT_PUBLIC_SQUARE_APP_ID and NEXT_PUBLIC_SQUARE_LOCATION_ID for the selected environment."
+          "Set NEXT_PUBLIC_SQUARE_APP_ID and NEXT_PUBLIC_SQUARE_LOCATION_ID for the selected environment.",
         );
         return;
       }
@@ -224,7 +270,10 @@ export default function CheckoutForm({ courseName, courseSlug, courseCost }: Che
           return;
         }
 
-        const payments = await window.Square.payments(squareAppId, squareLocationId);
+        const payments = await window.Square.payments(
+          squareAppId,
+          squareLocationId,
+        );
         const card = await payments.card();
 
         if (!isActive) {
@@ -237,7 +286,10 @@ export default function CheckoutForm({ courseName, courseSlug, courseCost }: Che
         setSquareReady(true);
         setSquareStatus("Secure card ready.");
       } catch (error) {
-        const message = error instanceof Error ? error.message : "Unable to initialize Square.";
+        const message =
+          error instanceof Error
+            ? error.message
+            : "Unable to initialize Square.";
         setSquareReady(false);
         setSquareStatus(null);
         setSubmitError(message);
@@ -282,8 +334,6 @@ export default function CheckoutForm({ courseName, courseSlug, courseCost }: Che
     };
 
     localStorage.setItem(storageKey, JSON.stringify(payload));
-    setSavedAt(payload.savedAt);
-
     try {
       const tokenResult = await cardRef.current.tokenize();
 
@@ -320,7 +370,9 @@ export default function CheckoutForm({ courseName, courseSlug, courseCost }: Che
 
       if (!response.ok) {
         throw new Error(
-          result.error ?? response.statusText ?? "Unable to send checkout notification right now."
+          result.error ??
+            response.statusText ??
+            "Unable to send checkout notification right now.",
         );
       }
 
@@ -330,7 +382,7 @@ export default function CheckoutForm({ courseName, courseSlug, courseCost }: Che
       setSubmitError(
         error instanceof Error
           ? error.message
-          : "Unable to send checkout notification right now."
+          : "Unable to send checkout notification right now.",
       );
     } finally {
       setIsSubmitting(false);
@@ -338,7 +390,7 @@ export default function CheckoutForm({ courseName, courseSlug, courseCost }: Che
   };
 
   return (
-    <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
+    <form className="mt-4 space-y-3" onSubmit={handleSubmit}>
       {fields.map((field) => (
         <label key={field.name} className="block">
           <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-slate-500">
@@ -365,7 +417,9 @@ export default function CheckoutForm({ courseName, courseSlug, courseCost }: Che
             className="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-amber-400 focus:bg-white"
           />
           {fieldErrors[field.name] ? (
-            <p className="mt-2 text-xs font-medium text-rose-700">{fieldErrors[field.name]}</p>
+            <p className="mt-2 text-xs font-medium text-rose-700">
+              {fieldErrors[field.name]}
+            </p>
           ) : null}
         </label>
       ))}
@@ -389,25 +443,27 @@ export default function CheckoutForm({ courseName, courseSlug, courseCost }: Che
         />
       </label>
 
-      <div className="rounded-[1.4rem] border border-slate-200/80 bg-white p-4 text-sm leading-7 text-slate-700 shadow-sm">
-        <div className="mb-3 flex items-center justify-between gap-3">
+      <div className="rounded-[1.4rem] border border-slate-200/80 bg-white p-3 text-sm leading-7 text-slate-700 shadow-sm sm:p-4">
+        <div className="mb-2 flex items-center justify-between gap-3 sm:mb-3">
           <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-slate-500">
-            Square Card
+            Payment Details
           </span>
-          <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-amber-800/80">
+          {/* <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-amber-800/80">
             {squareEnvironment}
-          </span>
+          </span> */}
         </div>
         <div
           id={cardContainerId}
-          className="min-h-[140px] rounded-2xl border border-slate-200 bg-slate-50 p-3"
+          className="min-h-[120px] rounded-2xl border border-slate-200 bg-slate-50 p-2.5 sm:p-3"
         />
         {!squareReady ? (
           <p className="mt-3 text-xs font-medium text-slate-500">
             {squareStatus ?? "Loading secure payment fields..."}
           </p>
         ) : (
-          <p className="mt-3 text-xs font-medium text-emerald-700">{squareStatus}</p>
+          <p className="mt-3 text-xs font-medium text-emerald-700">
+            {squareStatus}
+          </p>
         )}
       </div>
 
@@ -450,7 +506,8 @@ export default function CheckoutForm({ courseName, courseSlug, courseCost }: Che
       ) : null}
 
       <div className="rounded-[1.4rem] border border-slate-200/80 bg-slate-50 p-4 text-sm leading-7 text-slate-700">
-        Payment is completed in the browser through Square. Enter the card details below, then submit the form to charge the card securely.
+        Payment is completed in the browser through Square. Enter the card
+        details below, then submit the form to charge the card securely.
       </div>
 
       <Link

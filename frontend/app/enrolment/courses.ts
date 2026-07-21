@@ -170,7 +170,7 @@ export const courses: Course[] = [
       "A week-long entrepreneurship camp for kids aged 7-14 to explore business concepts and innovation.",
     description:
       "This camp is designed for young learners to dive into the world of various artistic disciplines. Participants will engage in hands-on activities, learn basic techniques, and work in teams to create their own artistic projects.",
-    image: "/images/summer-camp/Entrepreneurship_Camp.png",
+    image: "/images/summer-camp/Entrepreneur_Camp.png",
     imageAlt: "Children learning about business concepts and innovation in a summer camp setting",
     highlights: ["Small groups", "Practical skills", "Flexible pacing"],
     idealFor: "Children aged 7-14 interested in exploring various artistic disciplines.",
@@ -202,11 +202,11 @@ export const courses: Course[] = [
     ],
   },
   {
-    slug: "math-elementary",
-    name: "Math Tutor (Elementary)",
+    slug: "test",
+    name: "Test Course",
     category: "tutoring",
     cost: "$40 / hour",
-    priceCents: 4000,
+    priceCents: 1,
     cadence: "",
     summary:
       "Choose between one-on-one or small-group math tutoring sessions for kids aged 5-13 to improve their math skills.",
@@ -222,27 +222,48 @@ export const courses: Course[] = [
       "Practice materials",
     ],
   },
-  {
-    slug: "math-high-school",
-    name: "Math Tutor (High School)",
-    category: "tutoring",
-    cost: "$60 / hour",
-    priceCents: 6000,
-    cadence: "",
-    summary:
-      "Choose between one-on-one or small-group math tutoring sessions for kids aged 14-18 to improve their math skills.",
-    description:
-      "This tutoring service is designed for young learners to receive personalized math instruction. Participants will engage in one-on-one or small-group sessions, focusing on their specific math needs and goals.",
-    image: "/images/building/duck1.jpg",
-    imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
-    highlights: ["Small groups", "Practical skills", "Flexible pacing"],
-    idealFor: "Children aged 14-18 interested in improving their math skills.",
-    included: [
-      "Initial goals conversation",
-      "Small-group instruction",
-      "Practice materials",
-    ],
-  },
+  // {
+  //   slug: "math-elementary",
+  //   name: "Math Tutor (Elementary)",
+  //   category: "tutoring",
+  //   cost: "$40 / hour",
+  //   priceCents: 4000,
+  //   cadence: "",
+  //   summary:
+  //     "Choose between one-on-one or small-group math tutoring sessions for kids aged 5-13 to improve their math skills.",
+  //   description:
+  //     "This tutoring service is designed for young learners to receive personalized math instruction. Participants will engage in one-on-one or small-group sessions, focusing on their specific math needs and goals.",
+  //   image: "/images/building/duck2.jpg",
+  //   imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
+  //   highlights: ["Small groups", "Practical skills", "Flexible pacing"],
+  //   idealFor: "Children aged 5-13 interested in improving their math skills.",
+  //   included: [
+  //     "Initial goals conversation",
+  //     "Small-group instruction",
+  //     "Practice materials",
+  //   ],
+  // },
+  // {
+  //   slug: "math-high-school",
+  //   name: "Math Tutor (High School)",
+  //   category: "tutoring",
+  //   cost: "$60 / hour",
+  //   priceCents: 6000,
+  //   cadence: "",
+  //   summary:
+  //     "Choose between one-on-one or small-group math tutoring sessions for kids aged 14-18 to improve their math skills.",
+  //   description:
+  //     "This tutoring service is designed for young learners to receive personalized math instruction. Participants will engage in one-on-one or small-group sessions, focusing on their specific math needs and goals.",
+  //   image: "/images/building/duck1.jpg",
+  //   imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
+  //   highlights: ["Small groups", "Practical skills", "Flexible pacing"],
+  //   idealFor: "Children aged 14-18 interested in improving their math skills.",
+  //   included: [
+  //     "Initial goals conversation",
+  //     "Small-group instruction",
+  //     "Practice materials",
+  //   ],
+  // },
 ];
 
 export function getCourseBySlug(slug: string) {
