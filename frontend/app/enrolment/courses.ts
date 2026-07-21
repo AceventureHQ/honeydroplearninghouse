@@ -201,27 +201,27 @@ export const courses: Course[] = [
       "Practice materials",
     ],
   },
-  {
-    slug: "test",
-    name: "Test Course",
-    category: "tutoring",
-    cost: "$40 / hour",
-    priceCents: 1,
-    cadence: "",
-    summary:
-      "Choose between one-on-one or small-group math tutoring sessions for kids aged 5-13 to improve their math skills.",
-    description:
-      "This tutoring service is designed for young learners to receive personalized math instruction. Participants will engage in one-on-one or small-group sessions, focusing on their specific math needs and goals.",
-    image: "/images/building/duck2.jpg",
-    imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
-    highlights: ["Small groups", "Practical skills", "Flexible pacing"],
-    idealFor: "Children aged 5-13 interested in improving their math skills.",
-    included: [
-      "Initial goals conversation",
-      "Small-group instruction",
-      "Practice materials",
-    ],
-  },
+  // {
+  //   slug: "test",
+  //   name: "Test Course",
+  //   category: "tutoring",
+  //   cost: "1 cent",
+  //   priceCents: 1,
+  //   cadence: "",
+  //   summary:
+  //     "Choose between one-on-one or small-group math tutoring sessions for kids aged 5-13 to improve their math skills.",
+  //   description:
+  //     "This tutoring service is designed for young learners to receive personalized math instruction. Participants will engage in one-on-one or small-group sessions, focusing on their specific math needs and goals.",
+  //   image: "/images/building/duck2.jpg",
+  //   imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
+  //   highlights: ["Small groups", "Practical skills", "Flexible pacing"],
+  //   idealFor: "Children aged 5-13 interested in improving their math skills.",
+  //   included: [
+  //     "Initial goals conversation",
+  //     "Small-group instruction",
+  //     "Practice materials",
+  //   ],
+  // },
   // {
   //   slug: "math-elementary",
   //   name: "Math Tutor (Elementary)",
