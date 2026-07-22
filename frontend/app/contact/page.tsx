@@ -24,7 +24,7 @@ export default function Contact() {
                 <div className="mt-8 grid gap-4 sm:grid-cols-2">
                   {[
                     ["Email", "office@honeydrophouse.ca"],
-                    ["Phone", "(613) 779-6885"],
+                    ["Phone", "(753) 381-6303"],
                     ["Hours", "Mon-Fri, 9:00 AM - 5:00 PM"],
                     [
                       "Location",
