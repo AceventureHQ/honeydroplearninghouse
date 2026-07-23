@@ -76,7 +76,7 @@ export default function Home() {
           <div className="order-1 md:order-2">
             <div className="relative overflow-hidden rounded-[1.6rem] border border-amber-200 bg-white shadow-[0_18px_40px_rgba(31,41,55,0.14)]">
               <Image
-                src="/images/summer-camp/summercamp.jpg"
+                src="/images/summer-camp/summercamp.png"
                 alt="Honeydrop Learning House summer camp poster"
                 width={900}
                 height={1200}
