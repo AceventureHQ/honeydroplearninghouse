@@ -37,16 +37,16 @@ export default function Enrolment() {
               <h1 className="font-serif text-[clamp(2.7rem,4.8vw,3.8rem)] italic leading-[0.95] tracking-[-0.05em] text-slate-900">
                 Choose a learning path.
               </h1>
-              <p className="max-w-2xl text-base leading-7 text-slate-700 sm:text-lg">
+              {/* <p className="max-w-2xl text-base leading-7 text-slate-700 sm:text-lg">
                 Browse summer camps and tutoring in one place, then narrow the list with the filter below.
-              </p>
+              </p> */}
             </div>
 
             <div className="flex flex-wrap gap-2">
               {([
                 { value: "all", label: "All courses" },
                 { value: "summer-camps", label: "Summer camps" },
-                { value: "tutoring", label: "Tutoring" },
+                // { value: "tutoring", label: "Tutoring" },
               ] as const).map((option) => {
                 const active = selectedCategory === option.value;
 

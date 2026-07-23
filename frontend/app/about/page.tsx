@@ -139,22 +139,7 @@ export default function About() {
                 className="rounded-[1.8rem] border border-slate-200/80 bg-white/90 shadow-[0_18px_48px_rgba(15,23,42,0.08)]"
               />
 
-              {/* <div className="rounded-[1.8rem] border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_48px_rgba(15,23,42,0.08)] sm:p-6">
-                <p className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-amber-800/80">
-                  Open in Maps
-                </p>
-                <p className="mt-3 text-sm leading-7 text-slate-700">
-                  The map centers on the Honeydrop Learning House location from your provided link.
-                </p>
-                <a
-                  href="https://www.google.com/maps/place/Honeydrop+Learning+House/@44.166858,-77.3878033,17z/data=!3m1!4b1!4m6!3m5!1s0x89d625f271a6b4e3:0xa81cd56c63c1d5ed!8m2!3d44.166858!4d-77.385223!16s%2Fg%2F11ywp5r7hh?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-flex rounded-full border border-slate-900/10 bg-slate-900 px-5 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white transition-colors hover:bg-slate-800"
-                >
-                  Open in Google Maps
-                </a>
-              </div> */}
+
             </div>
           </div>
         </div>

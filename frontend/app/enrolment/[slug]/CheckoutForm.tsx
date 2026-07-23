@@ -448,9 +448,7 @@ export default function CheckoutForm({
           <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-slate-500">
             Payment Details
           </span>
-          {/* <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-amber-800/80">
-            {squareEnvironment}
-          </span> */}
+
         </div>
         <div
           id={cardContainerId}
@@ -475,11 +473,7 @@ export default function CheckoutForm({
         {isSubmitting ? "Processing..." : "Pay with Square"}
       </button>
 
-      {/* {savedAt ? (
-        <div className="rounded-[1.4rem] border border-emerald-200 bg-emerald-50 p-4 text-sm leading-7 text-emerald-900">
-          Enrolment details saved. Last updated {new Date(savedAt).toLocaleString()}.
-        </div>
-      ) : null} */}
+
 
       {submitMessage ? (
         <div className="rounded-[1.4rem] border border-emerald-200 bg-emerald-50 p-4 text-sm leading-7 text-emerald-900">

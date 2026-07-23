@@ -10,7 +10,7 @@ interface ProductImageProps extends Omit<ImageProps, 'src'> {
 
 export default function ProductImage({
   src,
-  fallbackSrc = '/images/default-placeholder.jpg', // Place this file in your public/images/ folder
+  fallbackSrc = '/images/default-course-image.jpg',
   alt,
   ...props
 }: ProductImageProps) {
