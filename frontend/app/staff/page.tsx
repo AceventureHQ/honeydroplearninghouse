@@ -23,7 +23,7 @@ export default function Staff() {
       role: "Music Lead",
       education: "B.A. (Sacred Music, in progress)",
       type: "Energetic, Inspiring",
-      image: "/images/staff/john.jpg",
+      image: "/images/staff/John.jpg",
       objectPosition: "object-center",
     },
     {
@@ -31,7 +31,7 @@ export default function Staff() {
       role: "Center Lead",
       education: "B.Ed. in Music; MTS; Ph.D.; OCT",
       type: "Warm, Vision-Driven",
-      image: "/images/staff/kimberly.png",
+      image: "/images/staff/Kimberly.png",
       objectPosition: "object-center top-[8%]",
     },
     {

@@ -111,36 +111,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-              {/* <div className="rounded-[1.8rem] border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_48px_rgba(15,23,42,0.08)] sm:p-6">
-                <div className="flex items-center gap-3">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-slate-200 bg-white shadow-sm">
-                    <Image
-                      src="/images/simple-logo.png"
-                      alt="Honeydrop Learning House logo"
-                      width={36}
-                      height={36}
-                      className="h-16 w-16 object-contain"
-                    />
-                  </div>
-                  <div>
-                    <p className="text-[0.68rem] uppercase tracking-[0.22em] text-amber-800/80">
-                      Quick notes
-                    </p>
-                    <p className="mt-2 text-sm leading-7 text-slate-700">
-                      We reply best when families share the learner&apos;s age, main goal, and preferred schedule.
-                    </p>
-                  </div>
-                </div>
-              </div>
 
-              <div className="rounded-[1.8rem] border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_48px_rgba(15,23,42,0.08)] sm:p-6">
-                <p className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-amber-800/80">
-                  Payment help
-                </p>
-                <p className="mt-3 text-sm leading-7 text-slate-700">
-                  For payment questions, use the Enrolment page to save learner details, then e-transfer to office@honeydrophouse.ca or pay in person at the office.
-                </p>
-              </div> */}
 
               <div className="overflow-hidden rounded-[1.8rem] border border-slate-200/80 bg-white/90 shadow-[0_24px_64px_rgba(15,23,42,0.08)] lg:col-span-1">
                 <div className="space-y-3 border-b border-slate-200/80 p-5 sm:p-6">

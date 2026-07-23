@@ -39,26 +39,7 @@ export default function Home() {
               </span>
             </div>
 
-            {/* <div className="mt-12 grid w-full gap-4 rounded-[1.8rem] border border-white/14 bg-white/84 p-4 shadow-[0_20px_60px_rgba(15,23,42,0.12)] backdrop-blur-md sm:grid-cols-3 sm:p-5">
-              {[
-                ["/programs#homeschool-support", "Homeschool Support", "Flexible guidance, portfolios, and family-centered routines."],
-                ["/programs#after-school-enrichment", "After School", "Homework help, creative projects, and a calm end to the day."],
-                ["/programs#adult-learning", "Adult Learning", "Practical classes built for confidence, scheduling, and growth."],
-              ].map(([href, label, description]) => (
-                <Link
-                  key={label}
-                  href={href}
-                  className="rounded-3xl border border-slate-200/80 bg-white/90 p-4 text-left transition-transform duration-200 hover:-translate-y-1 hover:bg-white"
-                >
-                  <div className="text-[0.75rem] tracking-[0.22em] text-amber-800/80">
-                    {label}
-                  </div>
-                  <p className="mt-2 text-sm leading-6 text-slate-700">
-                    {description}
-                  </p>
-                </Link>
-              ))}
-            </div> */}
+
           </div>
         </section>
 
@@ -123,10 +104,10 @@ export default function Home() {
               learners of all ages and encourage a lifelong approach to learning rooted in curiosity,
               confidence, and meaningful human connection.
             </p>
-            <p className="mt-6 text-base font-semibold text-amber-900 sm:text-lg">
+            {/* <p className="mt-6 text-base font-semibold text-amber-900 sm:text-lg">
               Explore our programs, meet our educators, and discover the ethos shaping our learning
               community.
-            </p>
+            </p> */}
             <Link
               href="/about"
               className="mt-8 inline-flex rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold tracking-wide text-white transition hover:bg-slate-700"

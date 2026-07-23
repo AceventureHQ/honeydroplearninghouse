@@ -15,66 +15,6 @@ export type Course = {
 };
 
 export const courses: Course[] = [
-  // {
-  //   slug: "homeschool-support",
-  //   name: "Homeschool Support",
-  //   cost: "$220 / month",
-  //   cadence: "Weekly support blocks",
-  //   summary:
-  //     "Guided learning blocks, family planning, and progress check-ins for custom homeschool paths.",
-  //   description:
-  //     "Best for families who want structure without giving up flexibility. We help shape a weekly rhythm, track goals, and keep learning moving in a calm, encouraging way.",
-  //   image: "/images/front-reception.jpg",
-  //   imageAlt: "Honeydrop Learning House reception space",
-  //   highlights: ["Weekly planning", "Portfolio guidance", "Family check-ins"],
-  //   idealFor: "Families building a personalized learning rhythm.",
-  //   included: [
-  //     "Learning goal review",
-  //     "Custom weekly plan",
-  //     "Progress communication",
-  //     "Resource recommendations",
-  //   ],
-  // },
-  // {
-  //   slug: "after-school-enrichment",
-  //   name: "After School Enrichment",
-  //   cost: "$165 / month",
-  //   cadence: "Afternoon sessions",
-  //   summary:
-  //     "Homework support, hands-on projects, and a calm reset after the school day.",
-  //   description:
-  //     "This course is built for learners who need a soft landing after school. We balance homework support with creative, active, and social enrichment.",
-  //   image: "/images/ESS00022-HDR.jpg",
-  //   imageAlt: "Learners participating in an enrichment activity",
-  //   highlights: ["Homework help", "Creative projects", "Movement breaks"],
-  //   idealFor: "Children who need support after the school day.",
-  //   included: [
-  //     "Homework help",
-  //     "Project-based learning",
-  //     "Snack and movement time",
-  //     "Daily routine support",
-  //   ],
-  // },
-  // {
-  //   slug: "adult-learning",
-  //   name: "Adult Learning",
-  //   cost: "$140 / course",
-  //   cadence: "Small-group sessions",
-  //   summary:
-  //     "Practical classes for adults who want confidence, support, and flexible learning.",
-  //   description:
-  //     "This option is designed for adults who want a supportive place to build everyday skills, literacy confidence, or a fresh learning routine.",
-  //   image: "/images/DSC_2413-1.jpg",
-  //   imageAlt: "Adult learning and community classroom setting",
-  //   highlights: ["Small groups", "Practical skills", "Flexible pacing"],
-  //   idealFor: "Adults looking for approachable, useful instruction.",
-  //   included: [
-  //     "Initial goals conversation",
-  //     "Small-group instruction",
-  //     "Practice materials",
-  //     "Flexible scheduling options",
-  //   ],
-  // },
   {
     slug: "robotics",
     name: "Robotics Camp",
@@ -127,57 +67,57 @@ export const courses: Course[] = [
     summary:
       "A week-long global explorers camp for kids aged 6-12 to explore different cultures and geographical locations.",
     description:
-      "This camp is designed for young learners to dive into the world of various artistic disciplines. Participants will engage in hands-on activities, learn basic techniques, and work in teams to create their own artistic projects.",
+      "This camp is designed for young learners to travel the world without leaving the classroom. Each day focuses on a different region, with hands-on activities, stories, games, and creative projects that bring diverse cultures to life.",
     image: "/images/summer-camp/Global_Explorers_Camp.png",
     imageAlt: "Children learning about different cultures and geographical locations in a summer camp setting",
-    highlights: ["Small groups", "Practical skills", "Flexible pacing"],
-    idealFor: "Children aged 6-12 interested in exploring different cultures and geographical locations.",
+    highlights: ["Cultural activities", "Geography games", "Storytelling"],
+    idealFor: "Children aged 6-12 curious about the wider world and different ways of life.",
     included: [
-      "Initial goals conversation",
+      "Daily cultural exploration activities",
       "Small-group instruction",
-      "Practice materials",
+      "Craft and project materials",
     ],
   },
   {
     slug: "multi-arts",
     name: "Multi-Arts Camp",
     category: "summer-camps",
-    cost: "$350",
-    priceCents: 35000,
+    cost: "$360",
+    priceCents: 36000,
     cadence: "",
     summary:
       "A week-long multi-arts camp for kids aged 5-14 to explore various artistic disciplines.",
     description:
-      "This camp is designed for young learners to dive into the world of various artistic disciplines. Participants will engage in hands-on activities, learn basic techniques, and work in teams to create their own artistic projects.",
+      "This camp is designed for young artists to experiment across multiple creative disciplines. Participants will rotate through painting, drawing, sculpting, and mixed-media projects, building confidence and finding new ways to express themselves.",
     image: "/images/summer-camp/Multi-arts_Camp.png",
     imageAlt: "Children creating artistic projects in a summer camp setting",
-    highlights: ["Small groups", "Practical skills", "Flexible pacing"],
-    idealFor: "Children aged 5-14 interested in exploring various artistic disciplines.",
+    highlights: ["Painting & drawing", "Sculpting", "Mixed media"],
+    idealFor: "Children aged 5-14 who love making art and want to try new creative techniques.",
     included: [
-      "Initial goals conversation",
+      "Daily art projects",
       "Small-group instruction",
-      "Practice materials",
+      "All art supplies and materials",
     ],
   },
   {
     slug: "entrepreneurship",
     name: "Entrepreneurship Camp",
     category: "summer-camps",
-    cost: "$350",
-    priceCents: 35000,
+    cost: "$360",
+    priceCents: 36000,
     cadence: "",
     summary:
       "A week-long entrepreneurship camp for kids aged 7-14 to explore business concepts and innovation.",
     description:
-      "This camp is designed for young learners to dive into the world of various artistic disciplines. Participants will engage in hands-on activities, learn basic techniques, and work in teams to create their own artistic projects.",
+      "This camp is designed for young entrepreneurs to learn what it takes to turn an idea into something real. Participants will develop a business concept, design a product or service, and pitch it to their peers in a fun, supportive environment.",
     image: "/images/summer-camp/Entrepreneur_Camp.png",
     imageAlt: "Children learning about business concepts and innovation in a summer camp setting",
-    highlights: ["Small groups", "Practical skills", "Flexible pacing"],
-    idealFor: "Children aged 7-14 interested in exploring various artistic disciplines.",
+    highlights: ["Business basics", "Creative problem-solving", "Pitch day"],
+    idealFor: "Children aged 7-14 who are natural leaders, creators, or love coming up with big ideas.",
     included: [
-      "Initial goals conversation",
+      "Business concept development",
       "Small-group instruction",
-      "Practice materials",
+      "Project and presentation materials",
     ],
   },
   {
@@ -190,80 +130,17 @@ export const courses: Course[] = [
     summary:
       "A week-long space exploration camp for kids aged 5-9 to learn about astronomy and rocket science.",
     description:
-      "This camp is designed for young learners to dive into the world of various artistic disciplines. Participants will engage in hands-on activities, learn basic techniques, and work in teams to create their own artistic projects.",
+      "This camp is designed for young space enthusiasts to explore the mysteries of the universe. Participants will learn about planets, stars, and galaxies through hands-on experiments, build and launch model rockets, and complete fun STEM challenges.",
     image: "/images/summer-camp/Mission_Space_STEM_Camp.png",
     imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
-    highlights: ["Small groups", "Practical skills", "Flexible pacing"],
-    idealFor: "Children aged 5-9 interested in exploring space and STEM concepts.",
+    highlights: ["Rocket building", "Astronomy activities", "STEM challenges"],
+    idealFor: "Children aged 5-9 fascinated by space, planets, and how things work.",
     included: [
-      "Initial goals conversation",
+      "Daily space-themed activities",
       "Small-group instruction",
-      "Practice materials",
+      "Rocket and experiment materials",
     ],
   },
-  // {
-  //   slug: "test",
-  //   name: "Test Course",
-  //   category: "tutoring",
-  //   cost: "1 cent",
-  //   priceCents: 1,
-  //   cadence: "",
-  //   summary:
-  //     "Choose between one-on-one or small-group math tutoring sessions for kids aged 5-13 to improve their math skills.",
-  //   description:
-  //     "This tutoring service is designed for young learners to receive personalized math instruction. Participants will engage in one-on-one or small-group sessions, focusing on their specific math needs and goals.",
-  //   image: "/images/building/duck2.jpg",
-  //   imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
-  //   highlights: ["Small groups", "Practical skills", "Flexible pacing"],
-  //   idealFor: "Children aged 5-13 interested in improving their math skills.",
-  //   included: [
-  //     "Initial goals conversation",
-  //     "Small-group instruction",
-  //     "Practice materials",
-  //   ],
-  // },
-  // {
-  //   slug: "math-elementary",
-  //   name: "Math Tutor (Elementary)",
-  //   category: "tutoring",
-  //   cost: "$40 / hour",
-  //   priceCents: 4000,
-  //   cadence: "",
-  //   summary:
-  //     "Choose between one-on-one or small-group math tutoring sessions for kids aged 5-13 to improve their math skills.",
-  //   description:
-  //     "This tutoring service is designed for young learners to receive personalized math instruction. Participants will engage in one-on-one or small-group sessions, focusing on their specific math needs and goals.",
-  //   image: "/images/building/duck2.jpg",
-  //   imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
-  //   highlights: ["Small groups", "Practical skills", "Flexible pacing"],
-  //   idealFor: "Children aged 5-13 interested in improving their math skills.",
-  //   included: [
-  //     "Initial goals conversation",
-  //     "Small-group instruction",
-  //     "Practice materials",
-  //   ],
-  // },
-  // {
-  //   slug: "math-high-school",
-  //   name: "Math Tutor (High School)",
-  //   category: "tutoring",
-  //   cost: "$60 / hour",
-  //   priceCents: 6000,
-  //   cadence: "",
-  //   summary:
-  //     "Choose between one-on-one or small-group math tutoring sessions for kids aged 14-18 to improve their math skills.",
-  //   description:
-  //     "This tutoring service is designed for young learners to receive personalized math instruction. Participants will engage in one-on-one or small-group sessions, focusing on their specific math needs and goals.",
-  //   image: "/images/building/duck1.jpg",
-  //   imageAlt: "Children learning about astronomy and rocket science in a summer camp setting",
-  //   highlights: ["Small groups", "Practical skills", "Flexible pacing"],
-  //   idealFor: "Children aged 14-18 interested in improving their math skills.",
-  //   included: [
-  //     "Initial goals conversation",
-  //     "Small-group instruction",
-  //     "Practice materials",
-  //   ],
-  // },
 ];
 
 export function getCourseBySlug(slug: string) {

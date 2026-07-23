@@ -156,7 +156,7 @@ function HeaderContent({ pathname }: { pathname: string }) {
             <Link href="/about" className={linkClasses}>
               About
             </Link>
-            <div
+            {/* <div
               className="relative"
               onMouseEnter={openPrograms}
               onMouseLeave={closePrograms}
@@ -215,7 +215,7 @@ function HeaderContent({ pathname }: { pathname: string }) {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
             <Link href="/staff" className={linkClasses}>
               Meet the Staff
             </Link>
@@ -265,7 +265,7 @@ function HeaderContent({ pathname }: { pathname: string }) {
                           <li>
                             <Link href="/about" className={`${linkClasses} block text-2xl sm:text-3xl`} onClick={closeMenu}>About</Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <button type="button" className={`${linkClasses} flex w-full items-center justify-between text-2xl sm:text-3xl`} onClick={togglePrograms}>
                               <span>Our Programs</span>
                               <span className="ml-4 text-xl">{programsOpen ? '−' : '+'}</span>
@@ -284,7 +284,7 @@ function HeaderContent({ pathname }: { pathname: string }) {
                                 </li>
                               </ul>
                             )}
-                          </li>
+                          </li> */}
                           <li>
                             <Link href="/staff" className={`${linkClasses} block text-2xl sm:text-3xl`} onClick={closeMenu}>Meet the Staff</Link>
                           </li>
